@@ -27,14 +27,14 @@ public class Numberguessinggame {
            if(GuessNo == number){
             int Score = MAX_ATTEMPTS - attempts;
             TotalScore = TotalScore + Score;
-            System.out .println("Congratulation ! You Guess The Number in "+ (attempts+1 )+ " attempts and your Round Score is "+ Score);
+            System.out .println("Congratulation ! You Guess The Number in "+ (attempts+1 )+ "attempts and your Round Score is "+ Score);
             break;
            }
            else if(GuessNo< number){
-             System.out.println("The number is greater then the  " + GuessNo + " . Now the " +( MAX_ATTEMPTS-(attempts+1) )+" attempts are left");
+             System.out.println("The number is greater than the  " + GuessNo + " . Now  " +( MAX_ATTEMPTS-(attempts+1) )+" attempts are left");
            }
            else if(GuessNo> number){
-             System.out.println("The number is less then the  " + GuessNo + " . Now the " +( MAX_ATTEMPTS-(attempts+1) )+" attempts are left");
+             System.out.println("The number is less than the  " + GuessNo + " . Now  " +( MAX_ATTEMPTS-(attempts+1) )+" attempts are left");
            }
            attempts= attempts +1;
         }
